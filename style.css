@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 84px;
+        margin-bottom: 84px;
+        background-color: #F3F3F3;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .logo > img{
+        margin-left: 22px;
+        height: 50px;
+    }
+
+    .hiddenMenu{
+        margin-right: 22px;
+        font-size: 42px;
+    }
+
+    .top{
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background-color:#FFFFFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .inOut{
+        background-color: #DCDCDC;
+    }
+    .normalMsg{
+        background-color: #FFFFFF;
+    }
+    .privateMsg{
+        background-color: #FFDEDE;
+    }
+    .name{
+        font-weight: 700;
+    }
+    .time{
+        color: #AAAAAA;
+    }
+    .room > div {
+        line-height: 20px;
+        font-size: 14px;
+        padding: 10px 0px;
+        margin: 4px 0px;
+    }
+    .room > div > p{
+        margin: 0px 8px;
+    }
+    
+    .bottom{    
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color:#FFFFFF;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);    
+    }
+
+    .msg{
+        margin-left: 22px;
+    }
+    .msg > input{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 400;
+        border: 0;
+        outline: 0;
+    }
+    .msg > input::placeholder{
+        font-style: italic;
+    }
+    .iconmsg{
+        margin-right: 22px;
+        font-size: 42px;
+    }
