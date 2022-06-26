@@ -63,17 +63,17 @@ function showMessage(msgs){
 
         } else if(serverMsgs[i].type === "message"){
             chat.innerHTML +=`<div class="normalMsg">
-                                <p><span class="time">(${serverMsgs[i].time})</span> <span class="name">${serverMsgs[i].from}</span> ${serverMsgs[i].text}</p>
+                                <p><span class="time">(${serverMsgs[i].time})</span> <span class="name">${serverMsgs[i].from}</span> para <span class="name">${serverMsgs[i].to}</span>: ${serverMsgs[i].text}</p>
                               </div>`
 
         } else if(serverMsgs[i].type === "private_message" && serverMsgs[i].to !== "Todos" && serverMsg[i].to === loginName){
             chat.innerHTML +=`<div class="privateMsg">
-                                <p><span class="time">(${serverMsgs[i].time})</span> <span class="name">${serverMsgs[i].from}</span> ${serverMsgs[i].text}</p>
+                                <p><span class="time">(${serverMsgs[i].time})</span> <span class="name">${serverMsgs[i].from}</span> para <span class="name">${serverMsgs[i].to}</span>: ${serverMsgs[i].text}</p>
                               </div>`
 
         }
     }
-    chat.scrollIntoView({block: "end", behavior: "smooth", inline: "end"});
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
 getServerMessage()
