@@ -12,6 +12,7 @@ function login() {
     teste.then(document.querySelector(".loading").style.display = "initial")
     teste.catch(loginError)
     teste.then(keepConnected)
+    teste.then(setInterval(keepConnected, 5000))
 }
 
 function loginError(){
