@@ -4,8 +4,8 @@
 
     body{
         font-family: 'Roboto', sans-serif;
-        margin-top: 84px;
-        margin-bottom: 84px;
+        scroll-margin-top: 84px;
+        scroll-margin-bottom: 84px;
         background-color: #F3F3F3;
     }
     body::-webkit-scrollbar {
